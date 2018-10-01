@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative; 
+}
+
+.left-arrow, .right-arrow {
+    font-size: 54px;
+    opacity: 0.2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    transition: all ease 300ms;
+}
+
+.left-arrow {
+    left: 1rem;
+}
+
+.right-arrow {
+    right: 1rem;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    color: rgba(15, 219, 209, 0.8);
+}
+
+.dot-box {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.slide-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 200ms ease;
+    
+}
+
+
+
+.slide.active {
+    opacity: 1;
+    /* animation: 2s cubic-bezier(.25,.75,.5,1.25) fadeInRight; */
+}
+
+/* @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+} */
+.slide a {
+    text-decoration: none;
+}
+.slide .infor {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    z-index: 999;
+    transition: all ease 200ms;
+}
+
+.slide .infor:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.dot.active {
+    color: #FFF;
+}
