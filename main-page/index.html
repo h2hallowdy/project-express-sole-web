@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menu Auto Scale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.menu.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/slide.show.css">
+    <script src="./JS/slide.show.js"></script>
+    <script src="./JS/menu.bar.js"></script>
+    <script src="./JS/main.js"></script>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <nav id="menu">
+            <div class="logo">
+                <h1>H-Studios</h1>
+            </div>
+            <div id="toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <ul class="list">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item dropdown-item">
+                    <a href="#">Products</a>
+                    <ul class="product-dropdown">
+                        <li class="drop-product">Dr.Dre Beats</li>
+                        <li class="drop-product">Skull Candy</li>
+                        <li class="drop-product">Sony</li>
+                        <li class="drop-product">Others</li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">Up coming</a></li>
+                <li class="item dropdown-item">
+                    <a href="#">About us</a>
+                    <ul class="product-dropdown">
+                        <li class="drop-product">Authors</li>
+                        <li class="drop-product">Coders.Tokyo</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="slide-show">
+        <div class="wrapper">
+
+            <i class="fas fa-angle-left left-arrow"></i>
+            <div class="slide-box">
+                <div class="slide active" style="background-image: url('./image/Beats-by-Dr.-Dre1.jpg')">
+                    <a href="#" class="infor">Explore Dr.Dre beats</a>
+                </div>
+                <div class="slide" style="background-image: url('./image/skullcandy.jpg')">
+                    <a href="#" class="infor">Explore Skullcandy</a></div>
+                <div class="slide" style="background-image: url('./image/sony.jpg')">
+                    <a href="#" class="infor">Explore Sony</a>
+                </div>
+            </div>
+            <i class="fas fa-angle-right right-arrow"></i>
+
+            <div class="dot-box">
+                <i class="fas fa-dot-circle dot active"></i>
+                <i class="fas fa-dot-circle dot"></i>
+                <i class="fas fa-dot-circle dot"></i>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+</body>
+<html>
