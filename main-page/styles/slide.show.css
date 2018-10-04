@@ -88,9 +88,10 @@
     text-decoration: none;
 }
 .slide .infor {
+    font-family: 'Kodchasan', sans-serif;
     position: absolute;
     top: 60%;
-    left: 10%;
+    right: 10%;
     padding: 16px;
     font-size: 20px;
     border-radius: 6px;

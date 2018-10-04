@@ -20,6 +20,7 @@ body {
 
 #menu .logo h1 {
     margin: 0;
+    padding: 0 1rem;
 }
 
 #menu.minimize {
@@ -117,4 +118,16 @@ body {
         display: block;
         transition: all ease-out 250ms;
     }
+}
+#menu .logo h1 {
+    cursor: pointer;
+    text-align: center;
+    background-color: dodgerblue;
+    transform: translateY(0px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 500ms;
+
+}
+
+#menu .logo:hover h1{
+    transform: translateY(45px);
 }
