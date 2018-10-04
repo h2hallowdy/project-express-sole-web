@@ -1,0 +1,230 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title H-Studios
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css?family=Dosis:600', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Kodchasan', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Permanent+Marker', rel='stylesheet')
+  link(rel='stylesheet', type='text/css', media='screen', href='./styles/style.menu.css')
+  link(rel='stylesheet', href='./styles/style.css')
+  link(rel='stylesheet', href='./styles/slide.show.css')
+  link(rel='stylesheet', href='./styles/feature.product.css')
+  link(rel='stylesheet', href='./styles/trending.css')
+  link(rel='stylesheet', href='./styles/support.bar.css')
+  link(rel='stylesheet', href='./styles/footer.css')
+  script(src='./stylesJS/slide.show.js')
+  script(src='./stylesJS/menu.bar.js')
+  script(src='./stylesJS/main.js')
+.menu-bar
+  nav#menu
+    .logo
+      h1 H-Studios
+    #toggle
+      .one
+      .two
+      .three
+    ul.list
+      li.item
+        a(href='/') Home
+      li.item.dropdown-item
+        a(href='#') Products
+        ul.product-dropdown
+          li.drop-product Dr.Dre Beats
+          li.drop-product Skull Candy
+          li.drop-product Sony
+          li.drop-product Others
+      li.item
+        a(href='#') Up coming
+      li.item.dropdown-item
+        a(href='#') About us
+        ul.product-dropdown
+          li.drop-product Authors
+          li.drop-product Coders.Tokyo
+      li.item
+        a(href='/users') Login
+.slide-show
+  .wrapper
+    i.fas.fa-angle-left.left-arrow
+    .slide-box
+      .slide.active(style="background-image: url('./images/Beats-by-Dr.-Dre1.jpg')")
+        a.infor(href='#') Explore Dr.Dre beats
+      .slide(style="background-image: url('./images/skullcandy.jpg')")
+        a.infor(href='#') Explore Skullcandy
+      .slide(style="background-image: url('./images/sony.jpg')")
+        a.infor(href='#') Explore Sony
+    i.fas.fa-angle-right.right-arrow
+    .dot-box
+      i.fas.fa-dot-circle.dot.active
+      i.fas.fa-dot-circle.dot
+      i.fas.fa-dot-circle.dot
+hr
+.title-block
+  h2 Feature Products
+.container-feature
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/beat-3.jpeg')
+        .product-text
+          .product-title Beats Studio 3.0
+          .product-price
+            | $230.
+            sup 99 MSRP*
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/Monster_dre.jpg')
+        .product-text
+          .product-title Monster Beats Tour
+          .product-price
+            | $300.
+            sup 99 MSRP*
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/beat-3.jpeg')
+        .product-text
+          .product-title Beats Studio 3.0
+          .product-price
+            | $500.
+            sup 99 MSRP*
+hr
+.title-block
+  h2 New Arrivals
+  a(href='#') See all &gt;
+.container-feature
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/skullcandy_new.jpg')
+        .product-text
+          .product-title Skullcandy INK&apos;D2
+          .product-price
+            | 10.03.18
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/sony_new.jpeg')
+        .product-text
+          .product-title Sony EX15 purple
+          .product-price
+            | 10.03.18
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/beat-3.jpeg')
+        .product-text
+          .product-title Beats Studio 3.0
+          .product-price
+            | 09.28.18
+hr
+.trendings-container
+  .trending-box
+    .title-box
+      .text-box
+        h1.text MAKE IT SPORTS
+        .text.text-sub
+          p Enjoy your sporty life. Introducing the beats Sports Collection.
+      a(href='#')
+        .btn
+          | EXPLORE
+      a(href='#')
+        .btn.bg-red.t-w
+          | Buy on &nbsp; 
+          i.fab.fa-apple
+    .image-box(style="background-image: url('./images/skullcandy-headbanger1.jpg')")
+hr
+.trendings-container
+  .trending-box
+    .image-box(style="background-image: url('./images/best-wireless-in-ear-headph.jpg')")
+    .title-box.gradient-bg
+      .text-box
+        h1.text.t-b MAKE IT LIFESTYLES
+        .text.text-sub.t-b
+          p Enjoy your life without wires. Introducing the Wireless Collection.
+      a(href='#')
+        .btn
+          | EXPLORE
+      a(href='#')
+        .btn.bg-red.t-w
+          | Buy on &nbsp; 
+          i.fab.fa-apple
+hr
+.support-bar-container
+  .support-bar
+    .icon-wrapper
+      a(href='#')
+        .icon
+          i.fas.fa-comments.fa-4x
+      p.t-w SUPPORT
+    .icon-wrapper
+      a(href='#')
+        .icon
+          i.fas.fa-headphones.fa-4x
+      p.t-w REGISTER YOUR BEATS
+    .icon-wrapper
+      a(href='#')
+        .icon
+          i.fas.fa-sync-alt.fa-4x
+      p.t-w UPGRADE YOUR BEATS
+    .icon-wrapper
+      a(href='#')
+        .icon
+          i.fas.fa-wrench.fa-4x
+      p.t-w SERVICE &amp; WARANTY
+.footer
+  .footer-container
+hr
+.footer-container
+  .page-title
+    h1 H Studios
+    p Find your music
+    p Find your soul
+  .footer-menu
+    .menu-footer
+      h2 Products
+      ul.list-menu
+        li.item-menu
+          a(href='#') HEADPHONES
+        li.item-menu
+          a(href='#') EARPHONES
+        li.item-menu
+          a(href='#') SPEAKERS
+        li.item-menu
+          a(href='#') ACCESSORIES
+        li.item-menu
+          a(href='#') AUDIOs
+    .menu-footer
+      h2 Support
+      ul.list-menu
+        li.item-menu
+          a(href='#') PRODUCT HELP
+        li.item-menu
+          a(href='#') SERVICE &amp; WARRANTY
+        li.item-menu
+          a(href='#') UPDATE YOUR BEATS
+        li.item-menu
+          a(href='#') JOIN OUR BEATS WORLD
+        li.item-menu
+          a(href='#') CONTACT US
+    .menu-footer
+      .contact-infor
+        | Contact us Via &nbsp;
+        a(href='https://www.facebook.com/h2hallowdy', target="_blank")
+          img(src='./images/facebook-logo-button.svg', alt='facebook', style='width: 20px;\
+          height:20px')
+          
+        a(href='#')
+          img(src='./images/instagram-logo.svg', alt='instagram', style='width: 20px;\
+          height:20px') 
+        a(href='https://coders.tokyo/', target="_blank")
+          img(src='./images/custom-css.svg', alt='instagram', style='width: 20px;\
+          height:20px')
+        
+.copy-right
+  p Design &copy; 2018 Hoang Nguyen. - From Coders.Tokyo
+.top-btn
+  i.fas.fa-chevron-up
