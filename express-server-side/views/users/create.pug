@@ -1,0 +1,20 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title Login Form
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', type='text/css', media='screen', href='../styles/login.form.css')
+  link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
+form(action='/users/create', method="POST")
+  h2 Welcome
+  .input-group
+    input#username(type='text', name='username')
+    label(for='username') Username
+  .input-group
+    input#password(type='password', name='password')
+    label(for='password') Password
+  button(type='submit') Create
+  p
+    | Don&apos;t have account? 
+    a(href='#') Sign Up
